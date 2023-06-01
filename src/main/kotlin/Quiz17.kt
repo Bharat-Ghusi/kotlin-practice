@@ -7,8 +7,9 @@ fun main() {
     println(spices.sortedByDescending { it.length })
     //2
    println( spices.filter { it[0] == 'c' && it[it.length-1] == 'e' })
+    println(spices.filter { it.startsWith('c')  && it.endsWith('e')}   )
 
     //3
-    println(spices.take(3))
+    println(spices.take(3).filter { it.startsWith('c') })
 
 }

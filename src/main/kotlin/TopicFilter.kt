@@ -13,7 +13,25 @@ fun loading(){
 //    println(lazyMap.toList())
     println("Lazy: ${lazyMap.first()}")
 }
+//partition
+fun partition(){
+    val list =listOf(1,2,3,4,5,6,7,8,9,10)
+    val (match, unMatch)=list.partition { it % 2 == 0 }
+    println(match)
+    println(unMatch)
+}
+// any, none, all
+fun testFilter(){
+    val list =listOf(1,2,3,4,5,6,7,8,9,10)
+    println(list.any { it % 2 == 0 })
+    println(list.none{ it % 2 == 0 })
+    println(list.all { it % 2 == 0 } )
+}
+
 
 fun main() {
-    loading()
+//    loading()
+//    partition()
+    testFilter()
 }
+
