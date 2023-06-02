@@ -7,6 +7,7 @@ open class Book(title: String, author:String) {
     override fun toString(): String {
         return "ReadPage-currentPage: $currentPage"
     }
+
 }
 class EBook(format:String ="text"): Book("Blooded max","Avilash"){
     var wordCount=0;
